@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Site</title>
+    <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+      font-size: 25px;
+      height: 100%;
+    }
+
+    #header, #main {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    #main {
+        margin-top: 50px;
+    }
+
+    h1, h2 {
+        text-align: center;
+    }
+
+    img {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 100%;
+    }
+
+
+    /* HERE STARTS CSS FOR TABLE! */
+    .form {
+      width: 640px;
+      height: 100px;
+      margin: 0 auto;
+      margin-top: 100px;
+}
+
+    input {
+      float: left;
+      width: 250px;
+      height: 30px;
+      margin-right: 10px;
+      padding: 0;
+      padding-left: 10px;
+      border: none;
+      background-color: rgb(202, 209, 208);
+      color: black;
+
+    }
+
+    button {
+      background-color: rgb(56, 187, 23);
+      border: none;
+      width: 100px;
+      height: 30px;
+      color: white;
+      float: left;
+      cursor: pointer;
+    }
+
+    table {
+      font-size: 30px;
+      text-align: center;
+      border-collapse: collapse;
+      margin: 0 auto;
+      margin-bottom: 100px;
+    }
+
+    th, td{
+      width: 50px;
+      height: 50px;
+      border-style: solid;
+      border-width: 0 1px 1px 0;
+      border-color: white;
+    }
+
+    th, td:first-child {
+    background: #AFCDE7;
+    color: white;
+    padding: 5px 5px;
+    }
+
+    td {
+    background: #D8E6F3;
+    }
+
+    </style>
+</head>
+<body>
+
+    <div id="header">
+        <h1>Veebileht!</h1>
+        <h2>Made by Ilja Vasilenko</h2>
+        <h2>206136IADB</h2>
+        <h2><a href="https://www.taltech.ee">TALTECH RULES</a></h2>
+        <img src="https://images.hdqwalls.com/wallpapers/i-love-coding-xl.jpg" alt="I LOVE CODING">
+    </div>
+
+    <div id="main">
+        <p class="text">All pool on üks minu "projekt", mida ma tegin ühe kooli aine jaoks. Selle aine nimetus oli
+            programeerimise alused, aga seal me mitte midagi kasulikku ei teinud. Mina ei tahtnud seal käia (sest juba
+            teadsin kõiki, mis meile õpetati) ja küsisin
+            õpetaja käest, kas on võimalik teha midagi. Ta ütles et ma pidin tegema ühe ülesanne.
+            Mul oli vaja kirjutada saiti, kus oli tabel ja 2 sisendid, mis vastavad vertikaalse ja horisontaalse suunaga.
+            Sisendil on vaja kirjutama arvud <br> (10 > number > 0), siis saatma neid nuppuga. Siis tabelis peaks ilmuma valitud ruut.
+
+        </p>
+        <p class="text">
+            Kooli ajal mulle meedldis programeerimine ja juba tadsin kuidas lihtsaid saite teha.
+            Ning proovisin ka õppida JavaScripti, et taha midagi tõsisem. JS oli aga päris raske.
+            Selles saitis on väike JS script mida ma kirjutasin kooli ajal, see käivitatakse nupule vajutades. Script võtab vormilt arvud ning arvutab
+            milline ruut on valitud.
+        </p>
+    </div>
+
+
+  <div class="form">
+    <input type="text" name="vertical" id="ver" placeholder="vertical" required>
+    <input type="text" name="horizontal" id="hor" placeholder="horizontal" required>
+    <button onclick="pow2()">Send</button>
+  </div>
+  <table>
+    <tr>
+      <th>0</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+      <th>6</th>
+      <th>7</th>
+      <th>8</th>
+      <th>9</th>
+      <th>10</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td id="011"></td>
+      <td id="012"></td>
+      <td id="013"></td>
+      <td id="014"></td>
+      <td id="015"></td>
+      <td id="016"></td>
+      <td id="017"></td>
+      <td id="018"></td>
+      <td id="019"></td>
+      <td id="0110"></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td id="021"></td>
+      <td id="022"></td>
+      <td id="023"></td>
+      <td id="024"></td>
+      <td id="025"></td>
+      <td id="026"></td>
+      <td id="027"></td>
+      <td id="028"></td>
+      <td id="029"></td>
+      <td id="0210"></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td id="031"></td>
+      <td id="032"></td>
+      <td id="033"></td>
+      <td id="034"></td>
+      <td id="035"></td>
+      <td id="036"></td>
+      <td id="037"></td>
+      <td id="038"></td>
+      <td id="039"></td>
+      <td id="0310"></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td id="041"></td>
+      <td id="042"></td>
+      <td id="043"></td>
+      <td id="044"></td>
+      <td id="045"></td>
+      <td id="046"></td>
+      <td id="047"></td>
+      <td id="048"></td>
+      <td id="049"></td>
+      <td id="0410"></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td id="051"></td>
+      <td id="052"></td>
+      <td id="053"></td>
+      <td id="054"></td>
+      <td id="055"></td>
+      <td id="056"></td>
+      <td id="057"></td>
+      <td id="058"></td>
+      <td id="059"></td>
+      <td id="0510"></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td id="061"></td>
+      <td id="062"></td>
+      <td id="063"></td>
+      <td id="064"></td>
+      <td id="065"></td>
+      <td id="066"></td>
+      <td id="067"></td>
+      <td id="068"></td>
+      <td id="069"></td>
+      <td id="0610"></td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td id="071"></td>
+      <td id="072"></td>
+      <td id="073"></td>
+      <td id="074"></td>
+      <td id="075"></td>
+      <td id="076"></td>
+      <td id="077"></td>
+      <td id="078"></td>
+      <td id="079"></td>
+      <td id="0710"></td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td id="081"></td>
+      <td id="082"></td>
+      <td id="083"></td>
+      <td id="084"></td>
+      <td id="085"></td>
+      <td id="086"></td>
+      <td id="087"></td>
+      <td id="088"></td>
+      <td id="089"></td>
+      <td id="0810"></td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td id="091"></td>
+      <td id="092"></td>
+      <td id="093"></td>
+      <td id="094"></td>
+      <td id="095"></td>
+      <td id="096"></td>
+      <td id="097"></td>
+      <td id="098"></td>
+      <td id="099"></td>
+      <td id="0910"></td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td id="0101"></td>
+      <td id="0102"></td>
+      <td id="0103"></td>
+      <td id="0104"></td>
+      <td id="0105"></td>
+      <td id="0106"></td>
+      <td id="0107"></td>
+      <td id="0108"></td>
+      <td id="0109"></td>
+      <td id="01010"></td>
+    </tr>
+  </table>
+  <script>
+      function pow2() {
+          var a = document.getElementById('ver').value
+          var b = document.getElementById('hor').value
+          var a = "0" + a;
+          var c = a + b;
+          var d = document.getElementById(c)
+          d.style.backgroundColor = 'rgb(66, 87, 227)';
+      }
+
+  </script>
+</body>
+</html>
